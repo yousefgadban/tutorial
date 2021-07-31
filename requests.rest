@@ -1,0 +1,56 @@
+GET http://localhost:3000/subscribers/
+
+###
+
+GET http://localhost:3000/subscribers/6102f653b918f0864772ea66
+
+###
+
+POST http://localhost:3000/subscribers/
+Content-Type: application/json
+
+{
+    "name": "Amazing person1",
+    "subscribedToChannel": "Web dev simple",
+    "newField": "New field"
+}
+
+
+###
+
+DELETE http://localhost:3000/subscribers/6102f653b918f0864772ea66
+
+###
+
+PATCH http://localhost:3000/subscribers/61042b8d4a01c7b54621c607
+Content-Type: application/json
+
+{
+    "newField": "newField 333"
+}
+
+###
+
+GET http://localhost:3000/updateFields
+
+###
+
+GET http://localhost:3000/updateAllFields
+
+
+### 
+
+GET http://localhost:3000/subscribers/subUpdateFields
+
+###
+
+GET http://localhost:3000/subscribers/getUserById?id=6102fc1a05194488aa4806f7
+
+###
+
+GET http://localhost:3000/users/
+
+
+###
+
+GET http://localhost:3000/subscribers/queryData
